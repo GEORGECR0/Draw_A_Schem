@@ -24,4 +24,4 @@ http://localhost:3000
 ```
 ### 🛠️If done correctly you should see `✅ Local server running at http://localhost:3000` in terminal which you can right click and visit the local host port `3000`
 
-Also public/blocks.js is taken from bloxd.io so credits to them
+##Also `public/blocks.js` is taken from bloxd.io so credits to them
