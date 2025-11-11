@@ -3,7 +3,7 @@ A site that makes your drawing to bloxd schematics ready to deploy.
 ---
 ⚡If you want to try it visit https://draw-a-schem.onrender.com/⚡
 ---
-##💫Getting Started💫
+💫Getting Started💫
 
 ### 1. Clone the repository
 
@@ -22,4 +22,5 @@ npm start
 ```ruby
 http://localhost:3000
 ```
+###🛠️If done correctly you should see `✅ Local server running at http://localhost:3000` which you can right click and visit the local host port `3000`
 
