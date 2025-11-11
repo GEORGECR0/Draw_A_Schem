@@ -13,7 +13,7 @@ cd Draw_A_Schem
 ```
 ### 🌌If you want to run the project locally🌌
 
-Running the `npm start` will run the project on `http://localhost:3000` :
+Running `npm start` will run the project on `http://localhost:3000` :
 
 ```ruby
 npm start
