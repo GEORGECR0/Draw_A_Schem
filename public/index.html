@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Draw A Schematic</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <h1>Draw A Schematic</h1>
+
+      <div class="sidebar-section">
+        <label for="name" class="field-label">Schematic Name</label>
+        <input type="text" id="name" value="Drawing_Schematic" class="field-input" />
+      </div>
+
+      <div class="sidebar-section">
+        <label for="blockId" class="field-label">
+          Primary Block ID
+          <span id="blockName" class="block-name">Unloaded</span>
+        </label>
+        <input type="number" id="blockId" value="2" min="0" max="2089" class="field-input" />
+      </div>
+
+      <div class="sidebar-section" id="secondBlockGroup">
+        <label for="blockId2" class="field-label">
+          Secondary Block ID
+          <span id="blockName2" class="block-name">Unloaded</span>
+        </label>
+        <input type="number" id="blockId2" value="3" min="0" max="2089" class="field-input" />
+      </div>
+
+      <div class="sidebar-section">
+        <div class="tool-selector">
+          <label class="tool-option">
+            <input type="radio" name="drawBlock" value="primary" checked />
+            <span class="tool-label">Block 1</span>
+          </label>
+          <label class="tool-option">
+            <input type="radio" name="drawBlock" value="secondary" />
+            <span class="tool-label">Block 2</span>
+          </label>
+          <label class="tool-option">
+            <input type="radio" name="drawBlock" value="eraser" />
+            <span class="tool-label">Eraser</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <button id="clearDrawing" type="button" class="secondary-btn">Clear Canvas</button>
+      </div>
+
+      <div class="sidebar-section">
+        <button id="generate" class="primary-btn">Generate .bloxdschem</button>
+      </div>
+
+      <div class="sidebar-footer">
+        <div class="info-text">Made by: GE0RGECR <br> Canvas: 32×32 pixels/blocks</div>
+      </div>
+    </aside>
+
+    <main class="workspace">
+      <div class="canvas-panel" id="drawingGroup">
+        <canvas id="drawCanvas" width="32" height="32"></canvas>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
